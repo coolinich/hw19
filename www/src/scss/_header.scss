@@ -1,0 +1,11 @@
+#header {
+    @include fixed-to-top();
+    background-color: $headerBg;
+    padding: 20px 39px 20px $asideWidth;
+    border: 1px solid #e5e8ee;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .1);
+    width: 100%;
+    // высоту потом удалить
+    height: 93px;
+    z-index: 90;
+}

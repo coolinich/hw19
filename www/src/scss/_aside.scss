@@ -1,0 +1,49 @@
+%aside-active-link {
+    border-color: $basicBlue;
+    background-color: #f2f4f7;
+}
+
+#aside {
+    @include fixed-to-top();
+    height: 100vh;
+    background-color: $asideBg;
+    max-width: $asideWidth;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .06);
+    z-index: 91;
+
+    .aside-head {
+        padding: 15px 20px 15px 40px;
+        border-bottom: 1px solid #e5e8ee;
+    }
+
+    .menu-wrapper {
+        padding-top: 45px;
+        padding-bottom: 30px;
+        height: calc(100vh - 93px);
+        overflow-y: auto;
+
+        .menu-title {
+            padding-left: 40px;
+            text-transform: uppercase;
+            margin-bottom: 35px;
+        }
+
+        .aside-nav {
+            a {
+                display: block;
+                border-left: 6px solid transparent;
+                padding: 20px 15px 20px 34px;
+                transition: all .2s ease-in;
+
+                &:hover {
+                    @extend %aside-active-link;
+                }
+
+                &.active {
+                    @extend %aside-active-link;
+                }
+            }
+        }
+    }
+}

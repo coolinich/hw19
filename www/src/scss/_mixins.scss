@@ -1,0 +1,26 @@
+@mixin fixed-to-top ($top: 0, $left: 0) {
+    position: fixed;
+    top: $top;
+    left: $left;
+}
+
+@mixin position-xy-center() {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin position-x-center(){
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@mixin position-y-center(){
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+} 

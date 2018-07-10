@@ -1,0 +1,73 @@
+.page-header {
+    height: 120px;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .04);
+    width: 100%;
+}
+
+.page-header-chart {
+    .chart-info {
+        margin-right: 20px;
+        span {
+            display: block;
+        }
+    }
+
+    .small-chart {
+        .column {
+            width: 4px;
+            background-color: $basicSmallChartBg;
+            position: relative;
+    
+            & + .column {
+                margin-left: 4px;
+            }
+
+            span {
+                display: none;
+                position: absolute;
+                top: -30px;
+                text-align: center;
+                left: 50%;
+                transform: translateX(-50%);
+                color: #fff;
+                padding: 3px 5px;
+                z-index: 1;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    border: 3px solid transparent;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+
+            &:hover {
+                span {
+                    display: block;
+                }
+            }
+        }
+
+        &.red-hover {
+            .column {
+                &:hover {
+                    background-color: $basicRed;
+                }
+
+                span {
+                    background-color: $basicRed;
+
+                    &::before {
+                        border-top-color:  $basicRed;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
