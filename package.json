@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/coolinich/hw19#readme",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "npm": "^6.1.0"
   },
   "devDependencies": {
     "gulp-sass": "^4.0.1"

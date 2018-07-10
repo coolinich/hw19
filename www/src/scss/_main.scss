@@ -1,4 +1,7 @@
 #main {
     padding-top: 93px;
     padding-left: $asideWidth;
+    height: 100vh;
+    min-width: 700px;
+    overflow-y: auto;
 }

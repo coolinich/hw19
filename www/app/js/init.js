@@ -1,0 +1,1 @@
+$('.scrollbar-inner').scrollbar();
